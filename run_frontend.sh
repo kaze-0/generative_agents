@@ -2,12 +2,12 @@
 
 FRONTEND_SCRIPT_PATH="environment/frontend_server"
 FRONTEND_SCRIPT_FILE="manage.py"
-CONDA_ENV="simulacra"
+CONDA_ENV="agents"
 
 FILE_NAME="Bash-Script-Frontend"
 echo "(${FILE_NAME}): Running frontend server"
 cd ${FRONTEND_SCRIPT_PATH}
-source /home/${USER}/anaconda3/bin/activate ${CONDA_ENV}
+source /home/${USER}/miniconda3/bin/activate ${CONDA_ENV}
 
 PORT=8000
 if [ -z "$1" ]
